@@ -47,3 +47,5 @@ Temporary Items
 /Flot.Mvc.Sample/bin
 /Flot.Mvc.Sample/obj/Debug
 /packages
+/Flot.Mvc/bin/Debug
+/Flot.Mvc/obj/Debug

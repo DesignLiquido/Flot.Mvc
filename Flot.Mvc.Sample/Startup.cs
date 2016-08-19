@@ -8,7 +8,7 @@ namespace Flot.Mvc.Sample
     {
         public void Configuration(IAppBuilder app)
         {
-            ConfigureAuth(app);
+            // ConfigureAuth(app);
         }
     }
 }
