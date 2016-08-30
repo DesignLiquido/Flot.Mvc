@@ -74,6 +74,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComplexFlot\Bar\BarFlot.cs" />
+    <Compile Include="ComplexFlot\Bar\BarFlotOptions.cs" />
+    <Compile Include="ComplexFlot\ComplexFlotBase.cs" />
+    <Compile Include="ComplexFlot\ComplexFlotOptions.cs" />
+    <Compile Include="ComplexFlot\ComplexFlotType.cs" />
+    <Compile Include="ComplexFlot\ComplexData.cs" />
+    <Compile Include="ComplexFlot\ComplexDataset.cs" />
+    <Compile Include="ComplexFlot\Line\LineFlot.cs" />
+    <Compile Include="ComplexFlot\Line\LineFlotOptions.cs" />
+    <Compile Include="ComplexFlot\Radar\RadarFlot.cs" />
+    <Compile Include="ComplexFlot\Radar\RadarFlotOptions.cs" />
     <Compile Include="Extensions\HtmlExtensions.cs" />
     <Compile Include="Extensions\ObjectExtensions.cs" />
     <Compile Include="FlotAxis.cs" />
@@ -83,6 +94,7 @@
     <Compile Include="FlotGrid.cs" />
     <Compile Include="FlotSeries.cs" />
     <Compile Include="FlotSeries`1.cs" />
+    <Compile Include="GlobalFlotOptions.cs" />
     <Compile Include="JsonConverters\FlotDataDictionarySerializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
