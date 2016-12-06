@@ -1,13 +1,17 @@
 ﻿@using Flot.Mvc.ComplexFlot
 @using Flot.Mvc.Extensions
 @using Flot.Mvc.Sample.Models
+
 @{
+    ViewBag.Title = "Bar Sample";
+
     const string Canvas = "BarFlot";
-    var complexFlot = new BarFlot();
-    complexFlot.ComplexData.Labels.AddRange(FakeComplexFlotData.Labels);
-    complexFlot.ComplexData.Datasets.AddRange(FakeComplexFlotData.Datasets);
+    var barFlot = new BarFlot();
+    barFlot.ComplexData.Labels.AddRange(FakeComplexFlotData.Labels);
+    barFlot.ComplexData.Datasets.AddRange(FakeComplexFlotData.Datasets);
 }
+
 <script src="@Url.Content("~/Scripts/Chart.js")"></script>
 <h3>@Canvas</h3>
 <canvas id="@Canvas" width="400" height="400"></canvas>
-@Html.CreateFlot(Canvas, complexFlot)
+@Html.CreateFlot(Canvas, barFlot)
