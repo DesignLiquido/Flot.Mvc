@@ -2,9 +2,6 @@
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Flot.Mvc
 {
@@ -21,6 +18,7 @@ namespace Flot.Mvc
         public int YAxis { get; set; }
         public bool Clickable { get; set; }
         public bool Hoverable { get; set; }
+
         public int ShadowSize { get; set; }
         public String HighlightColor { get; set; }
     }

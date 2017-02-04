@@ -9,16 +9,14 @@ namespace Flot.Mvc.Sample.Models
         {
             get
             {
-                return new[]
-                           {
-                               "January",
-                               "February",
-                               "March",
-                               "April",
-                               "May",
-                               "June",
-                               "July"
-                           };
+                return new[] {
+                    "January",
+                    "February",
+                    "March",
+                    "April",
+                    "May",
+                    "June"
+                };
             }
         }
 

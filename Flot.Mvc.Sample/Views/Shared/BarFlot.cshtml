@@ -7,11 +7,42 @@
 
     const string Canvas = "BarFlot";
     var barFlot = new BarFlot();
-    barFlot.ComplexData.Labels.AddRange(FakeComplexFlotData.Labels);
-    barFlot.ComplexData.Datasets.AddRange(FakeComplexFlotData.Datasets);
+    // barFlot.ComplexData.Labels.AddRange(FakeComplexFlotData.Labels);
+    // barFlot.ComplexData.Datasets.AddRange(FakeComplexFlotData.Datasets);
 }
 
-<script src="@Url.Content("~/Scripts/Chart.js")"></script>
 <h3>@Canvas</h3>
-<canvas id="@Canvas" width="400" height="400"></canvas>
-@Html.CreateFlot(Canvas, barFlot)
+<div id="placeholder" style="width:600px; height:300px"></div>
+@*Html.CreateFlot(Canvas, barFlot)*@
+<script type="text/javascript">
+
+    $(function () {
+
+        var data = [["January", 10], ["February", 8], ["March", 4], ["April", 13], ["May", 17], ["June", 9]];
+
+        $.plot("#placeholder", [data], {
+            series: {
+                bars: {
+                    show: true,
+                    barWidth: 0.6,
+                    align: "center"
+                }
+            },
+            xaxis: {
+                mode: "categories",
+                tickLength: 0
+            }
+        });
+
+        // Add the Flot version string to the footer
+
+        $("#footer").prepend("Flot " + $.plot.version);
+    });
+
+</script>
+
+<div id="footer"></div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/flot/addons")
+}

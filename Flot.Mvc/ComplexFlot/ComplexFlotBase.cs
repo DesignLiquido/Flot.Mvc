@@ -1,4 +1,6 @@
-﻿namespace Flot.Mvc.ComplexFlot
+﻿using System.Collections.Generic;
+
+namespace Flot.Mvc.ComplexFlot
 {
     /// <summary>
     /// The complex flot base.
@@ -11,17 +13,23 @@
         /// </summary>
         protected ComplexFlotBase()
         {
-            this.ComplexData = new ComplexData();
+            // this.ComplexData = new ComplexData();
+        }
+
+        public IEnumerable<FlotSeries> Series
+        {
+            get;
+            set;
         }
 
         /// <summary>
         /// Gets or sets the data.
         /// </summary>
-        public ComplexData ComplexData
-        {
-            get;
-            set;
-        }
+        //public ComplexData ComplexData
+        //{
+        //    get;
+        //    set;
+        //}
 
         /// <summary>
         /// Gets the flot type.

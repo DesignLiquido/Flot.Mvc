@@ -85,6 +85,7 @@
     <Compile Include="ComplexFlot\Line\LineFlotOptions.cs" />
     <Compile Include="ComplexFlot\Radar\RadarFlot.cs" />
     <Compile Include="ComplexFlot\Radar\RadarFlotOptions.cs" />
+    <Compile Include="DataStructures\RGBA.cs" />
     <Compile Include="Extensions\HtmlExtensions.cs" />
     <Compile Include="Extensions\ObjectExtensions.cs" />
     <Compile Include="FlotAxis.cs" />
@@ -93,6 +94,9 @@
     <Compile Include="FlotFont.cs" />
     <Compile Include="FlotGrid.cs" />
     <Compile Include="FlotSeries.cs" />
+    <Compile Include="FlotSeriesBase.cs" />
+    <Compile Include="FlotSeriesLines.cs" />
+    <Compile Include="FlotSeriesPoints.cs" />
     <Compile Include="FlotSeries`1.cs" />
     <Compile Include="GlobalFlotOptions.cs" />
     <Compile Include="JsonConverters\FlotDataDictionarySerializer.cs" />
